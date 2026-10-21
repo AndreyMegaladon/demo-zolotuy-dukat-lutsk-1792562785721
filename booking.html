@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Золотий Дукат | Бронювання</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-stone-950 text-stone-100 font-sans">
+    <header class="sticky top-0 z-50 bg-stone-900/90 backdrop-blur-md border-b border-stone-800 h-20 flex items-center">
+        <div class="max-w-6xl mx-auto px-6 w-full flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-amber-500 tracking-wider">☕ Золотий Дукат</a>
+            <nav class="hidden md:flex space-x-2">
+                <a href="index.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 transition">Головна</a>
+                <a href="about.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 transition">Про нас</a>
+                <a href="services.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 transition">Меню</a>
+                <a href="gallery.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 transition">Галерея</a>
+                <a href="booking.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 font-medium">Бронювання</a>
+                <a href="contacts.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 transition">Контакти</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="max-w-6xl mx-auto px-6 py-4 text-sm text-stone-400">
+        <a href="index.html" class="hover:text-amber-500">Головна</a> > <span class="text-stone-200">Бронювання</span>
+    </div>
+
+    <section class="py-12 px-6">
+        <div class="max-w-2xl mx-auto bg-stone-900 border border-stone-800 rounded-3xl shadow-2xl p-10">
+            <h1 class="text-3xl font-bold mb-8 text-center text-amber-500">Бронювання столика</h1>
+            <form action="https://formsubmit.co/info@zolotuydukat.ua" method="POST" class="space-y-6">
+                <div>
+                    <label class="block text-stone-300 mb-2 font-medium">Ваше ім'я</label>
+                    <input type="text" name="name" required class="w-full px-5 py-4 bg-stone-950 border-2 border-stone-800 rounded-xl text-stone-100 focus:border-amber-500 focus:ring-4 focus:ring-amber-500/20 outline-none transition" placeholder="Введіть ваше ім'я">
+                </div>
+                <div>
+                    <label class="block text-stone-300 mb-2 font-medium">Телефон</label>
+                    <input type="tel" name="phone" required class="w-full px-5 py-4 bg-stone-950 border-2 border-stone-800 rounded-xl text-stone-100 focus:border-amber-500 focus:ring-4 focus:ring-amber-500/20 outline-none transition" placeholder="+380XXXXXXXXX">
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-stone-300 mb-2 font-medium">Дата</label>
+                        <input type="date" name="date" required class="w-full px-5 py-4 bg-stone-950 border-2 border-stone-800 rounded-xl text-stone-100 focus:border-amber-500 focus:ring-4 focus:ring-amber-500/20 outline-none transition">
+                    </div>
+                    <div>
+                        <label class="block text-stone-300 mb-2 font-medium">Час</label>
+                        <input type="time" name="time" required class="w-full px-5 py-4 bg-stone-950 border-2 border-stone-800 rounded-xl text-stone-100 focus:border-amber-500 focus:ring-4 focus:ring-amber-500/20 outline-none transition">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-stone-300 mb-2 font-medium">Кількість гостей</label>
+                    <input type="number" name="guests" min="1" max="20" value="2" required class="w-full px-5 py-4 bg-stone-950 border-2 border-stone-800 rounded-xl text-stone-100 focus:border-amber-500 focus:ring-4 focus:ring-amber-500/20 outline-none transition">
+                </div>
+                <button type="submit" class="w-full bg-gradient-to-r from-amber-500 to-orange-500 text-white py-5 rounded-xl text-lg font-bold hover:shadow-xl transition">Забронювати</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-stone-900 text-stone-400 py-12 border-t border-stone-800 mt-20">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Золотий Дукат</h3>
+                <p class="text-sm">Атмосферна кав’ярня у старій кам’яниці з історією у Луцьку.</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Контакти</h3>
+                <p class="text-sm mb-2">вул. Крилова, 11а, Луцьк</p>
+                <p class="text-sm mb-2">+380636010396</p>
+                <p class="text-sm">info@zolotuydukat.ua</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Графік роботи</h3>
+                <p class="text-sm mb-2">Пн-Пт: 08:00 – 21:00</p>
+                <p class="text-sm">Сб-Нд: 10:00 – 21:00</p>
+            </div>
+        </div>
+    </footer>
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
