@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Золотий Дукат | Головна</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-stone-950 text-stone-100 font-sans">
+    <header class="sticky top-0 z-50 bg-stone-900/90 backdrop-blur-md border-b border-stone-800 h-20 flex items-center">
+        <div class="max-w-6xl mx-auto px-6 w-full flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-amber-500 tracking-wider">☕ Золотий Дукат</a>
+            <nav class="hidden md:flex space-x-2">
+                <a href="index.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 font-medium">Головна</a>
+                <a href="about.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 transition">Про нас</a>
+                <a href="services.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 transition">Меню</a>
+                <a href="gallery.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 transition">Галерея</a>
+                <a href="booking.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 transition">Бронювання</a>
+                <a href="contacts.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 transition">Контакти</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="min-h-[80vh] relative bg-cover bg-center flex items-center justify-center text-center px-6" style="background-image: url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1920&q=80')">
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="relative z-10 max-w-3xl">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 text-white leading-tight">Кав’ярня «Золотий Дукат» у Луцьку</h1>
+            <p class="text-lg md:text-xl text-stone-300 mb-8">Атмосферна кав’ярня у старій кам’яниці з історією, авторськими десертами та понад 40 різновидами кавових напоїв</p>
+            <a href="booking.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-2xl transition">Забронювати столик</a>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-12 text-amber-500">Популярні позиції</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-stone-900 border border-stone-800 rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80" alt="Філіжанка Золото Дукату" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <span class="text-xs font-semibold text-amber-500 uppercase tracking-wider">Кава</span>
+                    <h3 class="text-xl font-bold mt-1 mb-2">Філіжанка Золото Дукату</h3>
+                    <p class="text-stone-400 text-sm mb-4">Купаж 7 арабік. Шоколадно-мигдалевий смак, фруктовий післясмак, нотки фундука, карамелі та манго.</p>
+                    <div class="text-amber-400 font-bold text-lg">68₴</div>
+                </div>
+            </div>
+            <div class="bg-stone-900 border border-stone-800 rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=600&q=80" alt="Кавовий напій Золотий дукат" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <span class="text-xs font-semibold text-amber-500 uppercase tracking-wider">Кава</span>
+                    <h3 class="text-xl font-bold mt-1 mb-2">Кавовий напій "Золотий дукат"</h3>
+                    <p class="text-stone-400 text-sm mb-4">Еспресо, вершки, курага, харчове золото (150 мл).</p>
+                    <div class="text-amber-400 font-bold text-lg">110₴</div>
+                </div>
+            </div>
+            <div class="bg-stone-900 border border-stone-800 rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=600&q=80" alt="Казковий жолудь" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <span class="text-xs font-semibold text-amber-500 uppercase tracking-wider">Десерти</span>
+                    <h3 class="text-xl font-bold mt-1 mb-2">Казковий жолудь</h3>
+                    <p class="text-stone-400 text-sm mb-4">Карамельна серединка з грецьким горіхом, малиновий мус на основі сиру «Маскарпоне», мус праліне.</p>
+                    <div class="text-amber-400 font-bold text-lg">165₴</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-stone-900 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 text-amber-500">Відгуки гостей</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-stone-950 p-6 rounded-2xl border border-stone-800">
+                    <p class="text-stone-300 italic mb-4">"Атмосфера у кафе казкова. Знаходиться в підземеллі. Нашу групу зустріла сама господиня та з захопленням розповіла про створення цього кафе, його історію."</p>
+                    <div class="font-bold text-amber-400">— Віта Сердюк</div>
+                    <div class="text-xs text-stone-500">Google Maps</div>
+                </div>
+                <div class="bg-stone-950 p-6 rounded-2xl border border-stone-800">
+                    <p class="text-stone-300 italic mb-4">"Одна з улюблених кав'ярень м. Луцька, великий вибір кави та смаколиків, привітний персонал і надзвичайно затишне місце..."</p>
+                    <div class="font-bold text-amber-400">— Lesia Bulatova</div>
+                    <div class="text-xs text-stone-500">Google Maps</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-stone-900 text-stone-400 py-12 border-t border-stone-800">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Золотий Дукат</h3>
+                <p class="text-sm">Атмосферна кав’ярня у старій кам’яниці з історією у Луцьку.</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Контакти</h3>
+                <p class="text-sm mb-2">вул. Крилова, 11а, Луцьк</p>
+                <p class="text-sm mb-2">+380636010396</p>
+                <p class="text-sm">info@zolotuydukat.ua</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Графік роботи</h3>
+                <p class="text-sm mb-2">Пн-Пт: 08:00 – 21:00</p>
+                <p class="text-sm">Сб-Нд: 10:00 – 21:00</p>
+            </div>
+        </div>
+    </footer>
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
