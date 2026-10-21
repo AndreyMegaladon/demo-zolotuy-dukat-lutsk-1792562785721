@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Золотий Дукат | Галерея</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-stone-950 text-stone-100 font-sans">
+    <header class="sticky top-0 z-50 bg-stone-900/90 backdrop-blur-md border-b border-stone-800 h-20 flex items-center">
+        <div class="max-w-6xl mx-auto px-6 w-full flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-amber-500 tracking-wider">☕ Золотий Дукат</a>
+            <nav class="hidden md:flex space-x-2">
+                <a href="index.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 transition">Головна</a>
+                <a href="about.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 transition">Про нас</a>
+                <a href="services.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 transition">Меню</a>
+                <a href="gallery.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 font-medium">Галерея</a>
+                <a href="booking.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 transition">Бронювання</a>
+                <a href="contacts.html" class="hover:bg-amber-500/10 hover:text-amber-500 rounded-lg px-4 py-2 transition">Контакти</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="max-w-6xl mx-auto px-6 py-4 text-sm text-stone-400">
+        <a href="index.html" class="hover:text-amber-500">Головна</a> > <span class="text-stone-200">Галерея</span>
+    </div>
+
+    <section class="py-12 px-6 max-w-6xl mx-auto">
+        <h1 class="text-4xl font-bold mb-12 text-center text-amber-500">Фотогалерея</h1>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div class="aspect-square overflow-hidden rounded-xl bg-stone-900 border border-stone-800">
+                <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=600&q=80" alt="Кав'ярня" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl bg-stone-900 border border-stone-800">
+                <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80" alt="Кава" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl bg-stone-900 border border-stone-800">
+                <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=600&q=80" alt="Напій" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl bg-stone-900 border border-stone-800">
+                <img src="https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=600&q=80" alt="Десерт" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl bg-stone-900 border border-stone-800">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80" alt="Інтер'єр" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl bg-stone-900 border border-stone-800">
+                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80" alt="Заклад" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-stone-900 text-stone-400 py-12 border-t border-stone-800 mt-20">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Золотий Дукат</h3>
+                <p class="text-sm">Атмосферна кав’ярня у старій кам’яниці з історією у Луцьку.</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Контакти</h3>
+                <p class="text-sm mb-2">вул. Крилова, 11а, Луцьк</p>
+                <p class="text-sm mb-2">+380636010396</p>
+                <p class="text-sm">info@zolotuydukat.ua</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Графік роботи</h3>
+                <p class="text-sm mb-2">Пн-Пт: 08:00 – 21:00</p>
+                <p class="text-sm">Сб-Нд: 10:00 – 21:00</p>
+            </div>
+        </div>
+    </footer>
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
